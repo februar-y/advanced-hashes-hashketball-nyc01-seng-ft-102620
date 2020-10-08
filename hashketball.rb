@@ -160,4 +160,21 @@ def shoe_size(player_name)
   player_shoe_size
 end
 
+def team_colors(team_name)
+  game_lib = game_hash
+  p 
+end
+
+def team_names
+  game_lib = game_hash
+end
+
+def player_numbers
+  game_lib = game_hash
+end
+
+def player_stats
+  game_lib = game_hash
+end
+
 
