@@ -185,16 +185,18 @@ end
 
 def player_stats(player_name)
   game_lib = game_hash
+  player_stats = nil
   game_lib[:home][:players].each do |name|
     if name[:player_name] == player_name
-      p name
+      player_stats = name
     end
   end
   game_lib[:away][:players].each do |name|
     if name[:player_name] == player_name
-      p name
+      player_stats = name
     end
   end
+  p player_stats
 end
 
 
