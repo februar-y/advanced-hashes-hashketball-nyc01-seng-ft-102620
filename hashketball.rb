@@ -130,7 +130,7 @@ end
 
 def num_points_scored(player_name)
   game_lib = game_hash
-  p game_lib[home]
+  p game_lib[:home]
 end
 
 
