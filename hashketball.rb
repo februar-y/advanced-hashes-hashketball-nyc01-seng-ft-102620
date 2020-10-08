@@ -196,7 +196,7 @@ def player_stats(player_name)
       player_stats = name
     end
   end
-  p player_stats
+  player_stats
 end
 
 
