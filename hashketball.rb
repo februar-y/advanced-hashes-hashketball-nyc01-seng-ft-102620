@@ -149,12 +149,12 @@ def shoe_size(player_name)
   player_shoe_size = nil
   game_lib[:home][:players].each do |name|
     if name[:player_name] == player_name
-      player_shoe_size = name[:shoe_size]
+      player_shoe_size = name[:shoe]
     end
   end
   game_lib[:away][:players].each do |name|
     if name[:player_name] == player_name
-      player_shoe_size = name[:shoe_size]
+      player_shoe_size = name[:shoe]
     end
   end
   player_shoe_size
