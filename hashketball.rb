@@ -177,9 +177,9 @@ end
 def player_numbers(team_name)
   game_lib = game_hash
   if game_lib[:home][:team_name] == team_name
-    game_lib[:home][:team_name].map{|numbers| }
+    p game_lib[:home][:players].map{|player| player[:number]}
   else
-    
+    p game_lib[:away][:players].map{|player| player[:number]}
   end
 end
 
