@@ -190,6 +190,11 @@ def player_stats(player_name)
       p name
     end
   end
+  game_lib[:away][:players].each do |name|
+    if name[:player_name] == player_name
+      p name
+    end
+  end
 end
 
 
