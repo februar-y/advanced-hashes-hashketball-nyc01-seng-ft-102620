@@ -130,7 +130,7 @@ end
 
 def num_points_scored(player_name)
   game_lib = game_hash
-  game_lib[:home][:players][0].each do |name|
+  game_lib[:home][:players].each do |name|
     p name
   end
 end
