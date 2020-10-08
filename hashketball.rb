@@ -136,6 +136,11 @@ def num_points_scored(player_name)
       player_points = name[:points]
     end
   end
+  game_lib[:away][:players].each do |name|
+    if name[:player_name] == player_name
+      player_points = name[:points]
+    end
+  end
   p player_points
 end
 
