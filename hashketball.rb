@@ -174,8 +174,13 @@ def team_names
   [game_lib[:home][:team_name], game_lib[:away][:team_name]]
 end
 
-def player_numbers
+def player_numbers(team_name)
   game_lib = game_hash
+  if game_lib[:home][:team_name] == team_name
+    game_lib[:home][:team_name].map{|numbers| }
+  else
+    
+  end
 end
 
 def player_stats
