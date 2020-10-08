@@ -200,6 +200,21 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  
+  game_lib = game_hash
+  shoe_tracker = 0
+  rebounds = nil
+  game_lib[:home][:players].each do |name|
+    if name[:shoe] > shoe_tracker
+      shoe_tracker = name[:shoe]
+      rebounds = name[:rebounds]
+    end
+  end
+  game_lib[:away][:players].each do |name|
+    if name[:shoe] > shoe_tracker
+      shoe_tracker = name[:shoe]
+      rebounds = name[:rebounds]
+    end
+  end
+  p rebounds
 end
 
