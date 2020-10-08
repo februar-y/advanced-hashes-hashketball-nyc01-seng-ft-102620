@@ -171,6 +171,7 @@ end
 
 def team_names
   game_lib = game_hash
+  p [game_lib[:home][:team_name], game_lib[:away][:team_name]]
 end
 
 def player_numbers
