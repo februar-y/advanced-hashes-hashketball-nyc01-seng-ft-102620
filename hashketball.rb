@@ -127,6 +127,7 @@ def game_hash
 end
 
 # Write code here
+
 def num_points_scored(player_name)
   game_lib = game_hash
   game_lib[:home][:players].each do |name|
