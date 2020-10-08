@@ -162,7 +162,11 @@ end
 
 def team_colors(team_name)
   game_lib = game_hash
-  p 
+  if game_lib[:home][:team_name] == team_name
+    p game_lib[:home][:colors]
+  else
+    p game_lib[:away][:colors]
+  end
 end
 
 def team_names
