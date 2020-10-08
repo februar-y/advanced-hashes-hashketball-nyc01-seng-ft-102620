@@ -130,11 +130,13 @@ end
 
 def num_points_scored(player_name)
   game_lib = game_hash
+  player_points = nil
   game_lib[:home][:players].each do |name|
     if name[:player_name] == player_name
-      p name[:points]
+      player_points = name[:points]
     end
   end
+  p player_points
 end
 
 
