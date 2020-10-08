@@ -147,7 +147,17 @@ end
 def shoe_size(player_name)
   game_lib = game_hash
   player_shoe_size = nil
-  
+  game_lib[:home][:players].each do |name|
+    if name[:player_name] == player_name
+      player_shoe_size = name[:shoe_size]
+    end
+  end
+  game_lib[:away][:players].each do |name|
+    if name[:player_name] == player_name
+      player_shoe_size = name[:shoe_size]
+    end
+  end
+  player_points
 end
 
 
